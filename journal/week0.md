@@ -10,7 +10,16 @@
          ![Conceptual Diagram](assets/week-0-Murat-Conceptual_Diagram.png)
 
    2. **Logical Architectual Diagram:**
-   
+         I wanted to create High Available architecture but Free Lucid has limitations, I got this limitation error while adding more details. 
+         
+         ![Logical Error](assets/week-0-Murat-Limitation_Lucid.png)         
+         
+         That's why I could not connect the each component for the second availability zone.
+         
+         [Lucid Shared Link](https://lucid.app/lucidchart/8296b0fe-7dd7-48f4-9077-c5b8b75e8c3c/edit?viewport_loc=-1339%2C790%2C3790%2C2001%2C0_0&invitationId=inv_09e2f46c-56a6-49b2-a07e-badf17890c8a)
+         
+         ![Logical Diagram](assets/week-0-Murat-Lucid_Logical_Diagram.jpeg)
+
    3. **Create an Admin User:**
    
    4. **Generate AWS Credentials:**
