@@ -3,9 +3,12 @@
 ## Required Homework
 
    1. **Conceptual Diagram:**
-      [Lucid Shared Link](https://lucid.app/lucidchart/caf757ed-d7ec-4e83-aee7-c3b569b8f615/edit?viewport_loc=-13%2C9%2C1579%2C833%2C0_0&invitationId=inv_2659dc32-9e1e-429d-a0e0-54c406de6f68)
 
-![Conceptual Diagram](assets/week-0_Conceptual_Diagram_Murat.png)
+         I'm sorry I couldn't find a pen and draw on a napkin.
+         [Lucid Shared Link](https://lucid.app/lucidchart/caf757ed-d7ec-4e83-aee7-c3b569b8f615/edit?viewport_loc=-13%2C9%2C1579%2C833%2C0_0&invitationId=inv_2659dc32-9e1e-429d-a0e0-54c406de6f68)
+
+         ![Conceptual Diagram](assets/week-0-Murat-Conceptual_Diagram.png)
+
    2. **Logical Architectual Diagram:**
    
    3. **Create an Admin User:**
