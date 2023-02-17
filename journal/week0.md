@@ -21,8 +21,12 @@
          ![Logical Diagram](assets/week-0-Murat-Lucid_Logical_Diagram.jpeg)
 
    3. **Create an Admin User:**
+
+         ![Logical Diagram](assets/week-0-Murat-Admin_User.png)
    
    4. **Generate AWS Credentials:**
+   
+         ![Logical Diagram](assets/week-0-Murat-Generate_AWS_Credentials.png)
    
    5. **Installed AWS CLI:**
    
