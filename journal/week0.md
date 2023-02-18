@@ -39,12 +39,16 @@
    7. **Create a Billing Alarm:**
   
          ![Billing Alarm](assets/week-0-Murat-Billing_Alarm.png)
-   
+
+         ![Cloudwatch Alarm](assets/week-0-Murat-CloudWatch_Alarm.png)
+         
    8. **Create a Budget:**
 
          ![Create a Budget](assets/week-0-Murat-Create_Budget0.png)
          
          ![Create a Budget](assets/week-0-Murat-Create_Budget1.png)
+         
+         ![Create a Budget](assets/week-0-Murat-CloudWatch_Alarm.png)
 
 ##  Homework Challenges
    1. **Destroy your root account credentials, Set MFA, IAM role:**
