@@ -57,11 +57,18 @@
 
    
    2. **Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue:**
+      
+   3. **Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts**
    
-   3. Review all the questions of each pillars in the Well Architected Tool
-   
-   4. Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
-   
-   5. Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility
-   
-   6. Open a support ticket and request a service limit
+   4. **Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility**
+
+      For example AWS WAF, we need to use a specific port to listen and protect the system, WAF has some limitations like ports and filters. To do that, we have to pick another solution like F5.
+      
+      [AWS Documentation](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)
+
+   5. **Open a support ticket and request a service limit**
+      
+         ![Service Limit](assets/week-0-Murat-ServiceLimiti0.png)
+
+         ![Service Limit](assets/week-0-Murat-ServiceLimiti1.png)
+      
