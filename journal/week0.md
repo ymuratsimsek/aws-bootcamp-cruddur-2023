@@ -67,9 +67,13 @@
          ![EventBridge](assets/week-0-Murat-Eventbridge_SNS_Alarm3.png)
    
    3. **Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts**
-   
-   
-   
+     
+      [AWS Documentation](https://aws.amazon.com/blogs/devops/complete-ci-cd-with-aws-codecommit-aws-codebuild-aws-codedeploy-and-aws-codepipeline/)
+
+      [Lucid Shared Link](https://lucid.app/lucidchart/a4e64e1e-dc13-4ef1-aa9c-b40493e18b7e/edit?viewport_loc=676%2C-68%2C2438%2C1287%2C0_0&invitationId=inv_4db324de-7cc1-4080-83b7-b0bb2ab36c75)
+      
+      ![EventBridge](assets/week-0-Murat-CI_CD_Logical_Pipeline.jpeg)
+      
    4. **Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility**
 
       For example AWS WAF, we need to use a specific port to listen and protect the system, WAF has some limitations like ports and filters. To do that, we have to pick another solution like F5.
