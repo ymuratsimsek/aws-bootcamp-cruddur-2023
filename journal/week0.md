@@ -24,15 +24,28 @@
 
          ![Admin User](assets/week-0-Murat-Admin_User.png)
    
-   4. **Generate AWS Credentials:**
+   4. **Use CloudShell**
+
+         ![Use CloudShell](assets/week-0-Murat-Cloudshell.png)
+   
+   5. **Generate AWS Credentials:**
    
          ![AWS CLI Credentials](assets/week-0-Murat-Generate_AWS_Credentials.png)
    
-   5. **Installed AWS CLI:**
+   6. **Installed AWS CLI:**
    
-   6. **Create a Billing Alarm:**
+         ![Installed AWS CLI](assets/week-0-Murat-Installed_AWS_CLI.png)
+            
+   7. **Create a Billing Alarm:**
+  
+         ![Billing Alarm](assets/week-0-Murat-Billing_Alarm.png)
    
-   7. **Create a Budget:**
+   8. **Create a Budget:**
+
+         ![Create a Budget](assets/week-0-Murat-Create_Budget0.png)
+         
+         ![Create a Budget](assets/week-0-Murat-Create_Budget1.png)
+
 ##  Homework Challenges
    1. **Destroy your root account credentials, Set MFA, IAM role:**
    
