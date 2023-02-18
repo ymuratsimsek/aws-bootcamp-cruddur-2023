@@ -58,7 +58,17 @@
    
    2. **Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue:**
       
+      [AWS Documentation](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)
+
+         ![EventBridge](assets/week-0-Murat-Eventbridge_SNS_Alarm0.png)
+
+         ![EventBridge](assets/week-0-Murat-Eventbridge_SNS_Alarm1.png)
+
+         ![EventBridge](assets/week-0-Murat-Eventbridge_SNS_Alarm3.png)
+   
    3. **Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts**
+   
+   
    
    4. **Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility**
 
@@ -68,7 +78,7 @@
 
    5. **Open a support ticket and request a service limit**
       
-         ![Service Limit](assets/week-0-Murat-ServiceLimiti0.png)
+         ![Service Limit](assets/week-0-Murat-ServiceLimit0.png)
 
-         ![Service Limit](assets/week-0-Murat-ServiceLimiti1.png)
+         ![Service Limit](assets/week-0-Murat-ServiceLimit1.png)
       
