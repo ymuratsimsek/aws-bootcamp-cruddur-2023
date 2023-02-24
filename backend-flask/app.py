@@ -5,6 +5,7 @@ import os
 
 from services.home_activities import *
 from services.notifications_activities import *
+from services.healthchecker import *
 from services.user_activities import *
 from services.create_activity import *
 from services.create_reply import *
@@ -66,11 +67,15 @@ def data_notifications():
   data = NotificationsActivities.run()
   return data, 200
 
+@app.route("/api/health", methods=['GET'])
+def data_healthchecker():
+  data = HealthChecker.run()
+  return data, 200
+
 @app.route("/api/activities/home", methods=['GET'])
 def data_home():
   data = HomeActivities.run()
   return data, 200
-
 
 @app.route("/api/activities/@<string:handle>", methods=['GET'])
 def data_handle(handle):
