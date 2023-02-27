@@ -20,26 +20,43 @@
          ![EventBridge](assets/)
 
    4. **Implement a healthcheck in the V3 Docker compose file:**
+                  
+         - I have implemented the healthchecks by using docker compose file. Such as:
          
-         We can check the health of the containers for example:
-            - if the container has endpoints like nginx, we can check if the url/api works. 
-              **I added a new simple healthcheck api into the backend-flask and checked it with docker compose health check**
-            - if the container is a database, we can check the specific table that we determined. **I checked if the db is up&running**
-         I have updated the docker-compose.yml with heatlhcheck settings.
-         
-         
+            [Docker Documentation](https://docs.docker.com/compose/compose-file/compose-file-v3/)
+            ```sh
+                healthcheck:
+                test: ["CMD", "curl", "-f", "http://localhost:4567/api/health"]
+                interval: 5s
+                timeout: 10s
+                retries: 3
+                start_period: 40s
+            ```
+         - To make a `curl` request, I had to update the backed-end docker file to install the curl. 
+            ```sh
+               apt-get install -y curl
+             ```
+         - I developed a new simple healthcheck api for the backend-flask and used it with docker compose health check settings
+              ```py
+               @app.route("/api/health", methods=['GET'])
+              ```
+              ![HealtChecker](assets/week-1-Murat-NewHealthCheckApi.png)
 
+         - As seen in the screenshot, I can monitor the statuses of the backend, frontend and PostgreSQL containers.
+             
+              - I tried to make the health checker of Dynamodb healthy but I could not. I spent too much time thats why I did not create custom docker image for dynamodb to make a custom health check.
+              
+              ![HealtChecker](assets/week-1-Murat-DockerHealthCheckResult.png)
+                 
+         - How can we check if the containers are healtly?
+         ```
+            docker ps
+         ```
+         - How can we check the logs of health checker?
+         ```
+            docker inspect --format='{{json .State.Health}}' <container id>
          ```
          
-         ```
-
-
-          docker inspect --format='{{json .State.Health}}' docker-flask
-          docker ps
-
-         ![HealtChecker](assets/.png)
-         
-         [Docker Documentation](https://docs.docker.com/compose/compose-file/compose-file-v3/)
    5. **Research best practices of Dockerfiles and attempt to implement it in your Dockerfile:**
          
          [AWS Documentation](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)
