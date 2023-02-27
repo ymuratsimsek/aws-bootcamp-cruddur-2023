@@ -2,10 +2,8 @@
 
 ##  Homework Challenges
    1. **Run the dockerfile CMD as an external script:**
-         
-         []()
-
-         ![](assets/)
+       
+         ![RunCMDasScript](assets/week-1-Murat-RunCMDasScript.png)
 
    2. **Push and tag a image to DockerHub (they have a free tier):**
    
