@@ -65,9 +65,13 @@
 
    6. **Learn how to install Docker on your localmachine and get the same containers running outside of Gitpod / Codespaces:**
          
-         [AWS Documentation](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)
+         - I have installed Grafana, Prometheus, Node Exporter, Grok Exporter and Push gateway for my local Observability&Monitoring.
 
-         ![EventBridge](assets/)
+         ![Local Docker Running](assets/week-1-Murat-LocalDocker.png)
+         
+         ![Local Docker Output](assets/week-1-Murat-LocalDocker3.png)
+         
+         ![Local Docker Output](assets/week-1-Murat-LocalDocker2.png)
    
    7. **Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes:**
          
