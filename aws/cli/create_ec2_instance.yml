@@ -1,0 +1,10 @@
+aws ec2 run-instances \
+    --image-id ami-099effcf516c942b7 \
+    --count 1 \
+    --instance-type t2.micro \
+    --key-name murat \
+    --security-group-ids sg-*** \
+    --subnet-id subnet-*** \
+    --block-device-mappings "[{\"DeviceName\":\"/dev/xvda\",\"Ebs\":{\"VolumeSize\":10,\"DeleteOnTermination\":true}}]" \
+    --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=docker-server}]' 'ResourceType=volume,Tags=[{Key=Name,Value=docker-server-disk}]' \
+    --user-data file:///workspace/aws-bootcamp-cruddur-2023/aws/cli/script.sh

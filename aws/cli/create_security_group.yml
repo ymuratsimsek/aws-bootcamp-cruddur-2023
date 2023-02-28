@@ -1,0 +1,5 @@
+aws ec2 create-security-group \
+    --group-name backend-sg \
+    --description "Docker Flask Backend SG" \
+    --tag-specifications 'ResourceType=security-group,Tags=[{Key=Name,Value=backend-sg}]' \
+    --vpc-id "vpc-****"
