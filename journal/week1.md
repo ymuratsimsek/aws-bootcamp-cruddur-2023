@@ -98,7 +98,7 @@
 
             2. I authorized security group ingress via AWS CLI
 
-               ![](assets/week-1-Murat-LaunchEc2Docker2.png)
+               ![](assets/week-1-Murat-LaunchEc2Docker3.png)
 
             3. I created "cli" folder at Github under "aws" folder and added all cli scripts.
             
@@ -106,7 +106,7 @@
 
                ![](assets/week-1-Murat-LaunchEc2Docker9.png)
             
-            4. I installed Docker and started the backend application (pulling the image from DockerHub) during launch of EC2 instance by executing the script at userdata               
+            4. I installed Docker and started the backend application (pulling the tagged image from DockerHub) during launch of EC2 instance by executing the script.sh at userdata               
                 ```bash
                    #!/bin/sh
                    export PATH=/usr/local/bin:$PATH;
@@ -119,8 +119,17 @@
                    sudo docker run --rm -p 4567:4567 -e FRONTEND_URL='*' -e BACKEND_URL='*' -d ymsimsek/backend_flask:v1
                 ```
 
-            3. I created EC2 security group ingress via AWS CLI
-            3. I created EC2 security group ingress via AWS CLI
-            3. I created EC2 security group ingress via AWS CLI
+               ![](assets/week-1-Murat-LaunchEc2Docker4.png)
+               
+               ![](assets/week-1-Murat-LaunchEc2Docker5.png)
 
+               ![](assets/week-1-Murat-LaunchEc2Docker6.png)
+               
+            5. In the end, I could reach the backend api from the browser seen in the screenshot
+            
+               ![](assets/week-1-Murat-LaunchEc2Docker7.png)
+               
+            6. To verify what I did, I also logged in the EC2 instance from "EC2 Connect" and checked Docker process, image and Docker version.
+
+               ![](assets/week-1-Murat-LaunchEc2Docker8.png)
 
