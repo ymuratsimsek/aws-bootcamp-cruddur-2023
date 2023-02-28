@@ -24,9 +24,7 @@
          
          To keep the size of docker images small as:
              1. Smaller images are pulled/pushed faster
-             2. Smaller images take up less disk space
-             The simplest case is a compiler image and a runtime image: the compiler image compiles the code, and the runtime image copies the resulting artifact over. The runtime image never includes the compiler layer, and can therefore be smaller in size.      
-         
+             2. Smaller images take up less disk space         
          
          []()
 
@@ -72,7 +70,9 @@
          
    5. **Research best practices of Dockerfiles and attempt to implement it in your Dockerfile:**
          
-         [BestPractices](Best practices for writing Dockerfiles)
+         [BestPractices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+         
+         I have checked the best practices and applied the "removing /var/lib/apt/lists" and multi-stage building to reduce the image size.
 
          ![](assets/)
 
