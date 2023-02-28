@@ -90,6 +90,37 @@
    
    7. **Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes:**
          
-         []()
+         - I installed and configure EC2 and docker via AWS CLI
+            1. I created security group via AWS CLI
    
-         ![](assets/)
+               ![](assets/week-1-Murat-LaunchEc2Docker1.png)
+               ![](assets/week-1-Murat-LaunchEc2Docker2.png)
+
+            2. I authorized security group ingress via AWS CLI
+
+               ![](assets/week-1-Murat-LaunchEc2Docker2.png)
+
+            3. I created "cli" folder at Github under "aws" folder and added all cli scripts.
+            
+               [CLI Scripts](https://github.com/ymuratsimsek/aws-bootcamp-cruddur-2023/tree/main/aws/cli)
+
+               ![](assets/week-1-Murat-LaunchEc2Docker9.png)
+            
+            4. I installed Docker and started the backend application (pulling the image from DockerHub) during launch of EC2 instance by executing the script at userdata               
+                ```bash
+                   #!/bin/sh
+                   export PATH=/usr/local/bin:$PATH;
+                   yum update
+                   yum install docker -y
+                   sudo usermod -a -G docker ec2-user
+                   sudo systemctl enable docker.service
+                   sudo systemctl start docker.service
+                   sudo docker pull ymsimsek/backend_flask:v1
+                   sudo docker run --rm -p 4567:4567 -e FRONTEND_URL='*' -e BACKEND_URL='*' -d ymsimsek/backend_flask:v1
+                ```
+
+            3. I created EC2 security group ingress via AWS CLI
+            3. I created EC2 security group ingress via AWS CLI
+            3. I created EC2 security group ingress via AWS CLI
+
+
