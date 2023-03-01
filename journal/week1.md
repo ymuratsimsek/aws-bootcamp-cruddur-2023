@@ -25,9 +25,9 @@
          To keep the size of docker images small as:
              1. Smaller images are pulled/pushed faster
              2. Smaller images take up less disk space         
-         
-         []()
-
+         ```bash
+            docker system df -v
+         ```
          ![](assets/)
 
    4. **Implement a healthcheck in the V3 Docker compose file:**
@@ -73,6 +73,7 @@
          [BestPractices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
          
          I have checked the best practices and applied the "removing /var/lib/apt/lists" and multi-stage building to reduce the image size.
+         Also I used .dockerignore for node-modules
 
          ![](assets/)
 
