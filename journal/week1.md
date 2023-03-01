@@ -22,14 +22,39 @@
          
    3. **Use multi-stage building for a Dockerfile build:**
          
-         To keep the size of docker images small as:
-             1. Smaller images are pulled/pushed faster
-             2. Smaller images take up less disk space         
-         ```bash
-            docker system df -v
-         ```
-         ![](assets/)
+      - I didnot use Multi-stage build for backend app because it did not change the size of image too much. Instead I applied the best practice "rm -rf /var/lib/apt/lists/*" to its docker file to reduce the size of the image.
 
+         
+      - By using Multi-stage build, I decreased the size of frontend app 1.15Gb to 129Mb.
+        
+        To do that:
+         1. I used nginx to serve the frontend app.
+            
+      - You can see from the screenshots below; The frontend app can talk to backend app to show data. 
+         
+         To do that: 
+         
+         1. I added "REACT_APP_BACKEND_URL" as env to the docker file of frontend app. So, React can call the backend app without getting "undefined" error.
+         2. I also added "networks" for both application settings in docker compose file. So, I can make a reverse proxy on Nginx to send the UI request to Backend.
+         
+              [Frontend Docker File](https://github.com/ymuratsimsek/aws-bootcamp-cruddur-2023/blob/main/frontend-react-js/Dockerfile)
+         
+              [Frontend Nginx File](https://github.com/ymuratsimsek/aws-bootcamp-cruddur-2023/blob/main/frontend-react-js/nginx.conf)
+
+              [Docker Compose File](https://github.com/ymuratsimsek/aws-bootcamp-cruddur-2023/blob/main/docker-compose.yml)
+
+              **Image Size Before Multi-Stage Building**
+              ![](assets/week-1-Murat-MultiStage1.png)
+         
+              **Image Size After Multi-Stage Building**         
+              ![](assets/week-1-Murat-MultiStage2.png)
+         
+              **Reverse Proxy and Running Containers**
+              ![](assets/week-1-Murat-MultiStage3.png)
+
+              **Frontend Talks to Backend Successfully via Reverse Proxy**  
+              ![](assets/week-1-Murat-MultiStage4.png)
+         
    4. **Implement a healthcheck in the V3 Docker compose file:**
                   
          - I have implemented the healthchecks by using docker compose file. Such as:
@@ -73,7 +98,6 @@
          [BestPractices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
          
          I have checked the best practices and applied the "removing /var/lib/apt/lists" and multi-stage building to reduce the image size.
-         Also I used .dockerignore for node-modules
 
          ![](assets/)
 
