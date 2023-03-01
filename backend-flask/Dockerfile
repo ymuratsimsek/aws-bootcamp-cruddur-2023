@@ -14,7 +14,8 @@ RUN pip3 install -r requirements.txt
 
 RUN apt-get update && \
     apt-get install -y curl && \
-    rm -rf /var/cache/apk/*
+    rm -rf /var/cache/apk/* && \
+    rm -rf /var/lib/apt/lists/*
 #outside container  -> inside container
 # . means everthing in the current directory
 #first . -/backend-flask (outside container)
