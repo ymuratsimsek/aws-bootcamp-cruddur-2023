@@ -26,7 +26,7 @@ services:
     volumes:
       - ./frontend-react-js:/frontend-react-js
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/"]
+      test: ["CMD", "curl", "-f", "http://frontend-react-js:3000/"]
       interval: 5s
       timeout: 10s
       retries: 3
