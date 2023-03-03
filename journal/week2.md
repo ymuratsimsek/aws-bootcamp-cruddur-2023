@@ -2,8 +2,25 @@
 
 ##  Homework Challenges
    1. **Instrument Honeycomb for the frontend-application to observe network latency between frontend and backend[HARD]:**
-       
-         ![RunCMDasScript](assets/)
+         
+         I followed the [Honeycomb Doc](https://docs.honeycomb.io/getting-data-in/opentelemetry/browser-js/) to complete this task.
+
+         - **HeatMap Durations by Url and Root Name:**         
+            ![Instrumentation of Frontend](assets/week-2-Murat-HeatMap.png)
+
+            ![Instrumentation of Frontend](assets/week-2-Murat-HeatMap2.png)         
+
+         - **UI/Messages:**         
+         ![Instrumentation of Frontend](assets/week-2-Murat-Latency-UI-messages.png)
+
+         - **UI/Notifications:**         
+         ![Instrumentation of Frontend](assets/week-2-Murat-Latency-UI-notifications.png)
+
+         - **API/Messages:**         
+         ![Instrumentation of Frontend](assets/week-2-Murat-Latency-Api-messages.png)
+
+         - **API/Activities:**         
+         ![Instrumentation of Frontend](assets/week-2-Murat-Latency-Api-activities.png)
 
    2. **Add custom instrumentation to Honeycomb to add more attributes eg. UserId, Add a custom span:**
    
@@ -38,6 +55,26 @@
          
    3. **Run custom queries in Honeycomb and save them later eg. Latency by UserID, Recent Traces:**
 
+         - **Total Call Count of Frontend by Pages:**         
+            ![Instrumentation of Frontend](assets/week-2-Murat-QueryFrontend1.png)
+
+            ![Instrumentation of Frontend](assets/week-2-Murat-QueryFrontend2.png)
+         
+         - **Total Call Count of APIs by Api Url, Method and Http Status Code:**         
+            ![Instrumentation of Backend](assets/week-2-Murat-QueryBackend1.png)
+
+            ![Instrumentation of Backend](assets/week-2-Murat-QueryBackend2.png)
+         
+         - **Performance(%) of API Calls by API:**         
+            ![Instrumentation of Backend](assets/week-2-Murat-QueryBackendPerformance1.png)
+
+            ![Instrumentation of Backend](assets/week-2-Murat-QueryBackendPerformance2.png)
+         
+         - **HTTP Calls Longer Than 100ms:**         
+            ![Instrumentation of All](assets/week-2-Murat-QueryPerfAll1.png)
+
+            ![Instrumentation of All](assets/week-2-Murat-QueryPerfAll2.png)
+         
 
    4. Cloud Career Homework Details
 Lou has released the first video from Open Up The Cloud on the cloud career topic. The details on the homework for the boot camp are available at 44:30. Completing these tasks is part of the grading rubric.
