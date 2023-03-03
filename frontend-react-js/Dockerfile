@@ -8,7 +8,10 @@ RUN npm install --save \
     @opentelemetry/sdk-trace-web \
     @opentelemetry/exporter-trace-otlp-http \
     @opentelemetry/auto-instrumentations-web \
-    @opentelemetry/context-zone
+    @opentelemetry/context-zone \
+    @opentelemetry/instrumentation-document-load \
+    @opentelemetry/instrumentation-user-interaction \
+    @opentelemetry/instrumentation-long-task
 ARG REACT_APP_BACKEND_URL
 ENV REACT_APP_BACKEND_URL $REACT_APP_BACKEND_URL
 COPY . ./

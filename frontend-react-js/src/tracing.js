@@ -4,6 +4,11 @@ import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-http';
 import { BatchSpanProcessor } from '@opentelemetry/sdk-trace-base';
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
 import { ZoneContextManager } from '@opentelemetry/context-zone';
+import { DocumentLoadInstrumentation } from '@opentelemetry/instrumentation-document-load';
+import { UserInteractionInstrumentation } from '@opentelemetry/instrumentation-user-interaction';
+import { LongTaskInstrumentation } from '@opentelemetry/instrumentation-long-task';
+
+
 const { Resource } = require('@opentelemetry/resources');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
 
@@ -30,15 +35,22 @@ registerInstrumentations({
      // load custom configuration for xml-http-request instrumentation
      '@opentelemetry/instrumentation-xml-http-request': {
        propagateTraceHeaderCorsUrls: [
-           /.+/g,
+           /api.+/g,
          ],
      },
      // load custom configuration for fetch instrumentation
      '@opentelemetry/instrumentation-fetch': {
        propagateTraceHeaderCorsUrls: [
-           /.+/g,
+           /api.+/g,
          ],
      },
    }),
+   new DocumentLoadInstrumentation(),
+   new UserInteractionInstrumentation(),
+   new LongTaskInstrumentation({
+    observerCallback: (span, longtaskEvent) => {
+      span.setAttribute('location.pathname', window.location.pathname)
+    }
+  }),
  ],
 });
