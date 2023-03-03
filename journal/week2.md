@@ -75,18 +75,19 @@
 
             ![Instrumentation of All](assets/week-2-Murat-QueryPerfAll2.png)
          
-
    4. Cloud Career Homework Details
-Lou has released the first video from Open Up The Cloud on the cloud career topic. The details on the homework for the boot camp are available at 44:30. Completing these tasks is part of the grading rubric.
-The basic homework for this section is:
+         - When I check the 5 job descriptions, I saw that all of them have common requeirements for this job such as:
+         
+             1. Relevant IT infrastructure & platform knowledge
+             2. Deep understanding and problem solving ability
+             3. Verbal & written communication skills
+             4. Analytical and problem solving skills
+             5. Understanding of CI/CD and associated tools (Jenkins, etc.)
+             6. Knowledge of Cloud Platform
+             7. Knowledge of Infrastructure as Code (IaC)
+             8. Knowledge of monitoring & alerting systems
+             9. Hands on development experience with scripting languages
+             
+             ![Instrumentation of All](assets/JourneyToThe-Cloud.png)
 
-Fill in the “My Journey To The Cloud” card.
-Analyze 5 Job Descriptions.
-The due date and details on how to submit this homework is still TBD. I will add the details here once we know more.
 
-One of the resources mentioned in the video is the Open Up The Cloud System, which you can find at https://openupthecloud.github.io/system/
-There is a lot of detailed knowledge here, so definitely check it out. The Open Up The Cloud https://github.com/openupthecloud/open-cloud-dev-box
-also has a log of resources.
-
-There is also a survey available you can https://docs.google.com/forms/d/e/1FAIpQLSeQAM4MUmPwUZraLJpPKuL8kJVM62-f8MHvauR24-C-wFdakg/viewform
-If you have questions you want covered in the future sessions, you can add them here.
