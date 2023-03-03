@@ -3,6 +3,12 @@ FROM node:16.18 as builder
 WORKDIR /frontend-react-js
 COPY package*.json ./
 RUN npm install
+RUN npm install --save \
+    @opentelemetry/api \
+    @opentelemetry/sdk-trace-web \
+    @opentelemetry/exporter-trace-otlp-http \
+    @opentelemetry/auto-instrumentations-web \
+    @opentelemetry/context-zone
 ARG REACT_APP_BACKEND_URL
 ENV REACT_APP_BACKEND_URL $REACT_APP_BACKEND_URL
 COPY . ./
