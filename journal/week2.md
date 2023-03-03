@@ -7,18 +7,34 @@
 
    2. **Add custom instrumentation to Honeycomb to add more attributes eg. UserId, Add a custom span:**
    
-         - **Build with Tag:**
-         ![DockerHub1](assets/)
+         - I have added instrumentations to all services except my custom health check api.               
          
-         - **List Images:**
-         ![DockerHub2](assets/)
+         - I have fixed the class name of data_show_activity to test the instrumentation I added.
+        
+            ```python
+              data = ShowActivities.run(activity_uuid=activity_uuid)
+            ```
+         - **Honecomb Search Graph:**
+         ![Honecomb Search Graph](assets/week-2-Murat-Span-Graph.png)
          
-         - **Push Images to Dockerhub:**
-         ![DockerHub3](assets/)
+         - **CreateActivitiy Spans:**
+         ![CreateActivitiy](assets/week-2-Murat-Span-CreateActivitiy.png)
          
-         - [Docker Hub Url]()
+         - **MessageGroups Spans:**
+         ![MessageGroups](assets/week-2-Murat-Span-MessageGroups.png)
          
-            ![DockerHub4](assets/) 
+         - **Message Spans:**
+          ![Message](assets/week-2-Murat-Span-Messages.png) 
+
+         - **Notifications Spans:**
+          ![Notifications](assets/week-2-Murat-Span-Notifications.png) 
+         
+         - **ShowActivities Spans:**
+          ![ShowActivities](assets/week-2-Murat-Span-ShowActivities.png) 
+
+         - **UserActivities Spans:**
+          ![UserActivities](assets/week-2-Murat-Span-UserActivities.png) 
+         
          
    3. **Run custom queries in Honeycomb and save them later eg. Latency by UserID, Recent Traces:**
 
